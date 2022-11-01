@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="<?php echo $ruta; ?>/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <?php
+            date_default_timezone_set('America/Argentina/Buenos_Aires');
+            setlocale(LC_ALL,'spanish');
+            $fechaActual = strftime('%A %d de %B de %Y');
+            echo '<p> '.$fechaActual . '</p>';
+        ?>
+    </header>
+    
+    <main>
